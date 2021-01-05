@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GYM_GetYourMuscles", "GYM_GetYourMuscles\GYM_GetYourMuscles.csproj", "{4ABBCC41-7571-4D2A-87DE-C59813B5809C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GYM_GetYourMuscles.Services", "GYM_GetYourMuscles.Services\GYM_GetYourMuscles.Services.csproj", "{5BB0F55D-69BF-4535-9014-64EEF30C5C33}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GYM_GetYourMuscles.Repositories", "GYM_GetYourMuscles.Repositories\GYM_GetYourMuscles.Repositories.csproj", "{D8260603-D10C-495B-8E36-3B80DF790A52}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GYM_GetYourMuscles.Domain", "GYM_GetYourMuscles.Domain\GYM_GetYourMuscles.Domain.csproj", "{E73E940A-72D6-435A-9625-06A5E4628E07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GYM_GetYourMuscles.Util", "GYM_GetYourMuscles.Util\GYM_GetYourMuscles.Util.csproj", "{F2288AED-3427-498B-901E-88DC15C1EC15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GYM_GetYourMuscles.Exception", "GYM_GetYourMuscles.Exception\GYM_GetYourMuscles.Exception.csproj", "{83E10E1A-1EC0-4947-9BEB-35D0BE9EF3AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4ABBCC41-7571-4D2A-87DE-C59813B5809C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ABBCC41-7571-4D2A-87DE-C59813B5809C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ABBCC41-7571-4D2A-87DE-C59813B5809C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ABBCC41-7571-4D2A-87DE-C59813B5809C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BB0F55D-69BF-4535-9014-64EEF30C5C33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BB0F55D-69BF-4535-9014-64EEF30C5C33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BB0F55D-69BF-4535-9014-64EEF30C5C33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BB0F55D-69BF-4535-9014-64EEF30C5C33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8260603-D10C-495B-8E36-3B80DF790A52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8260603-D10C-495B-8E36-3B80DF790A52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8260603-D10C-495B-8E36-3B80DF790A52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8260603-D10C-495B-8E36-3B80DF790A52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E73E940A-72D6-435A-9625-06A5E4628E07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E73E940A-72D6-435A-9625-06A5E4628E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E73E940A-72D6-435A-9625-06A5E4628E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E73E940A-72D6-435A-9625-06A5E4628E07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2288AED-3427-498B-901E-88DC15C1EC15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2288AED-3427-498B-901E-88DC15C1EC15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2288AED-3427-498B-901E-88DC15C1EC15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2288AED-3427-498B-901E-88DC15C1EC15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83E10E1A-1EC0-4947-9BEB-35D0BE9EF3AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83E10E1A-1EC0-4947-9BEB-35D0BE9EF3AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83E10E1A-1EC0-4947-9BEB-35D0BE9EF3AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83E10E1A-1EC0-4947-9BEB-35D0BE9EF3AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F9E28FEB-1ABC-4746-B9BD-87FD9524B8A6}
+	EndGlobalSection
+EndGlobal
