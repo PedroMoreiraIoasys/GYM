@@ -8,7 +8,7 @@ namespace GYM_GetYourMuscles.Services.Interfaces
 {
     public interface IExerciseService
     {
-        Task<IEnumerable<ExerciseResponse>> GetExercise();
+        Task<IEnumerable<ExerciseResponse>> GetExercises();
         Task<ExerciseResponse> InsertExercise(ExerciseRequest signRequest);
         Task<ExerciseResponse> UpdateExercise(ExerciseRequest signRequest);
         void DeleteExercise(long id);

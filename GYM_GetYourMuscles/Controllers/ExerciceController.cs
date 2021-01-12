@@ -1,7 +1,9 @@
 ﻿using GYM_GetYourMuscles.Exception;
 using GYM_GetYourMuscles.Services.Interfaces;
-using GYM_GetYourMuscles.Services.Requests;
+using GYM_GetYourMuscles.Services.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Net.Http.Headers;
 using System.Threading.Tasks;
 
 namespace GYM_GetYourMuscles.Controllers
@@ -10,38 +12,25 @@ namespace GYM_GetYourMuscles.Controllers
     [Route("[controller]")]
     public class ExerciceController : ControllerBase
     {
-        private IUserService _authenticationService;
+        private IExerciseService _exerciseService;
 
-        public ExerciceController(IUserService authenticationService)
+        public ExerciceController(IExerciseService exerciseService)
         {
-            _authenticationService = authenticationService;
+            _exerciseService = exerciseService;
         }
 
+        [Authorize]
         [HttpGet]
         public async Task<ActionResult> GetExercises()
         {
             try
             {
-                var token = await _authenticationService.Sign(signRequest);
+                var email = JwtService.GetEmailFromToken(Request.Headers[HeaderNames.Authorization]);
+                var exercises = await _exerciseService.GetExercises();
 
-                return Ok(token);
+                return Ok(exercises);
             }
             catch (BaseException ex)
-            {
-                return StatusCode(ex._status, ex._error);
-            }
-        }
-
-        [HttpPost]
-        public async Task<ActionResult> Sign(SignRequest signRequest)
-        {
-            try
-            {
-                var token = await _authenticationService.Sign(signRequest);
-                 
-                return Ok(token);
-            }
-            catch(BaseException ex)
             {
                 return StatusCode(ex._status, ex._error);
             }

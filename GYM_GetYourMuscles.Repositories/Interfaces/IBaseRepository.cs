@@ -9,10 +9,10 @@ namespace GYM_GetYourMuscles.Repositories.Interfaces
     public interface IBaseRepository<TEntity>
     {
         Task<TEntity> GetById(int id);
-        Task<List<TEntity>> GetAll(int id);
+        Task<List<TEntity>> GetAll();
         Task<TEntity> Update(TEntity entity);
         Task<TEntity> Insert(TEntity entity);
-        Task Delete(int id);
+        Task Delete(long id);
         IQueryable<TEntity> Include();
     }
 }

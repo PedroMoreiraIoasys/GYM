@@ -12,11 +12,13 @@ namespace GYM_GetYourMuscles
         {
             services.AddScoped<IAuthenticationService, AuthenticationService>();
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IExerciseService, ExerciseService>();
         }
 
         public static void RegisterRepository(IServiceCollection services)
         {
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IExerciseRepository, ExerciseRepository>();
         }
     }
 }

@@ -18,14 +18,14 @@ namespace GYM_GetYourMuscles.Repositories.Repositories
             _dbSet = _context.Set<TEntity>();
         }
 
-        public async Task Delete(int id)
+        public async Task Delete(long id)
         {
             var entityToDelete = Include().FirstOrDefault(c => c.Id == id);
             _dbSet.Remove(entityToDelete);
             await _context.SaveChangesAsync();
         }
 
-        public async Task<List<TEntity>> GetAll(int id)
+        public async Task<List<TEntity>> GetAll()
         {
             return await Include().ToListAsync();
         }
