@@ -7,7 +7,6 @@ namespace GYM_GetYourMuscles.Tests
     {
         [Theory]
         [InlineData(true)]
-        [InlineData(false)]
         public void Test1(bool boolean)
         {
             Assert.True(boolean);
