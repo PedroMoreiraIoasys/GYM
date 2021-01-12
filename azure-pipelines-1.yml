@@ -21,9 +21,7 @@ steps:
   inputs:
     testSelector: 'testAssemblies'
     testAssemblyVer2: |
-      **\*Test*.dll
-      !**\*TestAdapter.dll
-      !**\obj\**
+      GYM_GetYourMuscles.Tests.dll
     searchFolder: '$(System.DefaultWorkingDirectory)'
     runTestsInIsolation: true
     codeCoverageEnabled: true
