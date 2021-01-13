@@ -11,5 +11,12 @@ namespace GYM_GetYourMuscles.Tests
         {
             Assert.True(boolean);
         }
+
+        [Theory]
+        [InlineData(true)]
+        public void Test2(bool boolean)
+        {
+            Assert.True(boolean);
+        }
     }
 }
